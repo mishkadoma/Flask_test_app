@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Описание портрета
+{% endblock %}
+
+{% block body %}
+  <form method='post' action='{{ url_for("portrait_description") }}'>
+    <p><input type='text' name='name' placeholder="Имя"/></p>
+    <p><input type='text' name='size' placeholder="Размер"/></p>
+    <p><input type='text' name='price' placeholder="Цена"/></p>
+    <p><input type='submit' value="Отправить" /></p>
+  </form>
+{% endblock %}

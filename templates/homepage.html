@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Юлия Киршина
+{% endblock %}
+
+{% block body %}
+  <a href="{{ url_for('portrait') }}">Заказ портрета</a><br />
+  <a href="{{ url_for('build_table') }}">Построить таблицу</a><br />
+  <hr />
+  <a href="{{ url_for('set_cookie') }}">Назначить куки</a><br />
+  <a href="{{ url_for('get_cookie') }}">Посмотреть куки</a><br />
+{% endblock %}

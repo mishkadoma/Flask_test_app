@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Ваш заказ
+{% endblock %}
+
+{% block body %}
+  <table border="5">
+    {% for item, value in data.items(): %}
+      <tr>
+        <th> {{ item }} </th>
+        <td> {{ value }} </td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
